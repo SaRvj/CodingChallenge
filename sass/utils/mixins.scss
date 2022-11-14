@@ -1,0 +1,20 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin no-v-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin spacing {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@mixin lg {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
