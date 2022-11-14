@@ -49,6 +49,124 @@ a:active {
   text-decoration: none;
 }
 
+:root {
+  --background-color: #ffffff;
+  --accent-color: #00945f;
+  --secondary-color: #ebf7f5;
+  --text-color: #888888;
+  --alt-text-color: #666666;
+  --testimonial-name-text: #29ae8d;
+  --button-color: #e97300;
+  --button-hover: #29ae8d;
+  --button-text: #ffffff;
+  --link-color: #759b24;
+  --hr-color: #c2c2c2;
+  --divider-color: #c0c0c0;
+  --white-text: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+main {
+  margin: 0 2rem 0 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--accent-color);
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  color: var(--text-color);
+  line-height: 2rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --background-color: #ffffff;
+  --accent-color: #00945f;
+  --secondary-color: #ebf7f5;
+  --text-color: #888888;
+  --alt-text-color: #666666;
+  --testimonial-name-text: #29ae8d;
+  --button-color: #e97300;
+  --button-hover: #29ae8d;
+  --button-text: #ffffff;
+  --link-color: #759b24;
+  --hr-color: #c2c2c2;
+  --divider-color: #c0c0c0;
+  --white-text: #ffffff;
+}
+
+.hero {
+  padding-top: 30%;
+  padding-bottom: 30%;
+  background-image: url("../../assets/mobile_m.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 720px) {
+  .hero {
+    background-image: url("../../assets/mobile_l.png");
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    background-image: url("../../assets/Banner_s.png");
+    padding-top: 17%;
+    padding-bottom: 17%;
+  }
+}
+@media (min-width: 1150px) {
+  .hero {
+    background-image: url("../../assets/Banner_m.png");
+  }
+}
+@media (min-width: 1400px) {
+  .hero {
+    background-image: url("../../assets/Banner_l.png");
+  }
+}
+@media (min-width: 1800px) {
+  .hero {
+    background-image: url("../../assets/Banner_xl.png");
+  }
+}
+
 .green_border {
   width: 75px;
   border-bottom: 2px solid var(--accent-color);
