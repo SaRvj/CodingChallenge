@@ -1,2 +1,2 @@
-@forward "base";
-@forward "components";
+@import "./base/reset.scss", "./base/typography.scss";
+@import "./components/border.scss";
