@@ -1,0 +1,1 @@
+Radancy assessment Novembre 2022
