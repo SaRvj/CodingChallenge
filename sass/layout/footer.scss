@@ -1,0 +1,44 @@
+.footer {
+    border-top: 1px solid var(--accent-color);
+  
+    &__content {
+        > * {
+            margin: 2rem 3rem 2rem 3rem;
+        }
+    }
+  
+    &__socials {
+        display: flex;
+        gap: 1rem;
+    }
+  
+    &__link {
+        //changes to svg files to preserve site performance
+        height: 30px;
+        width: 30px;
+    }
+  
+    &__policy {
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+  
+    &__policy_link {
+        text-decoration: underline;
+    }
+  
+    &__policy_link,
+    &__policy {
+        color: var(--alt-text-color);
+    }
+  
+    &__nav_link {
+        color: black;
+        transition: 0.2s;
+        font-size: 0.8rem;
+    
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+}
