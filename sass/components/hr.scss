@@ -1,0 +1,15 @@
+//hr tag styling for theme change
+
+@use "../base";
+
+hr {
+    height: 1px;
+    background-color: var(--hr-color);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    @include base.lg {
+        display: none;
+    }
+}
