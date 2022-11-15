@@ -1,0 +1,45 @@
+@use "../base";
+
+.testimonials {
+    margin: 0 20% 0 20%;
+
+    &__container {
+        margin-top: 3rem;
+        position: relative;
+    }
+
+    &__image {
+        //width and height set for site performance
+        display: block;
+        margin: auto;
+        width: 180px;
+        height: 180px;
+    }
+    &__text {
+        color: var(--alt-text-color);
+        font-style: italic;
+        background-image: url("../../assets/quote.svg");
+        background-repeat: no-repeat;
+        background-size: 5rem;
+    }
+
+    &__name {
+        color: var(--testimonial-name-text);
+        font-size: 1.1rem;
+        position: ab;
+    }
+
+    &__name,
+    &__text {
+        text-align: center;
+    }
+}
+
+@include base.lg {
+    .testimonials {
+        margin: 0 4rem 3rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
