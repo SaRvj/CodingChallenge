@@ -1,0 +1,51 @@
+@use "../base";
+
+.citizens_advantage {
+    > * {
+        @include base.spacing;
+    }
+
+    &__header {
+        margin-bottom: 0.9rem;
+    }
+
+    &__link {
+        color: var(--link-color);
+        transition: 0.5s;
+
+        &:hover {
+            color: var(--button-color);
+        }
+    }
+
+    @include base.lg {
+        margin-bottom: 4rem;
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 3rem;
+            row-gap: 6rem;
+        }
+        &__right {
+            border-left: 1px solid var(--divider-color);
+            padding-left: 3.5rem;
+        }
+        &__left {
+            padding-right: 3.5rem;
+        }
+
+        &__item {
+            margin-top: 0;
+        }
+
+        &__text {
+            margin-bottom: 0;
+        }
+
+        &__link {
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+}
