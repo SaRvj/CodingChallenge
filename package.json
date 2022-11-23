@@ -4,7 +4,8 @@
   "description": "Radancy assessment Novembre 2022",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass --watch sass/main.scss css/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SaRvj/CodingChallenge/issues"
   },
-  "homepage": "https://github.com/SaRvj/CodingChallenge#readme"
+  "homepage": "https://github.com/SaRvj/CodingChallenge#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
 }
